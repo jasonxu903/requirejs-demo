@@ -25,7 +25,7 @@ define(['jquery'], function($) {
         if (!this.isArrival) return
         this.isArrival = false
         $.ajax({
-            url: 'http://platform.sina.com.cn/slide/album_tech',
+            url: 'https://platform.sina.com.cn/slide/album_tech',
             type: 'get',
             dataType: 'jsonp',
             jsonp: 'jsoncallback',
