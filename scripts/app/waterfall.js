@@ -66,10 +66,9 @@ define(['jquery'], function($) {
             img_url = news.img_url,
             name = news.short_name,
             intro = news.short_intro;
-        img_url = img_url.replace(/^http/ig, '')
-        console.log(img_url)
+        img_url = img_url.replace(/^http/ig, 'https')
         var node = '<li class="item">'
-        node += '<a class="img-ct" href=' + url + '><img src=https' + img_url + '></a>'
+        node += '<a class="img-ct" href=' + url + '><img src=' + img_url + '></a>'
         node += '<h4 class="header">' + name + '</h4>'
         node += '<p class="desp">' + intro + '</p></li>'
         
